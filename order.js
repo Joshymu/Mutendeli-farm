@@ -1,25 +1,49 @@
 document.getElementById('order-form').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Order submitted!');
-    // Add your form submission code here
+
     var formData = new FormData(this);
-    fetch('your-server-endpoint', {
+    fetch('https://formspree.io/f/{your-form-id}', {
         method: 'POST',
-        body: formData
-    }).then(response => response.json())
-      .then(data => console.log(data))
-      .catch(error => console.error('Error:', error));
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Order successfully submitted!');
+        } else {
+            alert('There was a problem with your order submission.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was a problem with your order submission.');
+    });
 });
 
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Message sent!');
-    // Add your form submission code here
+
     var formData = new FormData(this);
-    fetch('your-server-endpoint', {
+    fetch('https://formspree.io/f/{your-form-id}', {
         method: 'POST',
-        body: formData
-    }).then(response => response.json())
-      .then(data => console.log(data))
-      .catch(error => console.error('Error:', error));
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Message successfully sent!');
+        } else {
+            alert('There was a problem with your message submission.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was a problem with your message submission.');
+    });
 });
