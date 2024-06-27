@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutenderi Integrated Farm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mutenderi Integrated Farm</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Welcome to Mutenderi Integrated Farm</h2>
+        <div class="slideshow">
+            <img src="north_orchard.jpeg" alt="Farm Image 1">
+            <img src="orchard_pics.jpeg" alt="Farm Image 2">
+            <img src="mixedfarm.jpeg" alt="Farm Image 3">
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Mutenderi Integrated Farm Ltd. is a dynamic agricultural enterprise focused on producing premium organic crops using sustainable practices and environmentally friendly technology. We cultivate macadamia, avocado, eucalyptus, and legumes across strategic locations: Mutenderi farm in Ngoma District (50ha), Nyarubuye Sector in Kirehe District (10ha), and Karama Karangazi sector in Nyagatare District (10ha). Our crop selection is guided by market demand, profitability, and climate-resilient innovations, ensuring optimal yield and environmental stewardship, with prospects to expand to the Eastern region.</p>
+        <h3>Vision</h3>
+        <p>We aspire to be a catalyst for positive change, inspiring others to embrace sustainable living and environmental stewardship. We envision a greener and healthier planet for generations to come.</p>
+        <h3>Mission</h3>
+        <p>Our aim is to promote environmental sustainability by integrating responsible land use and farming practices. We aim to produce premium organic products while prioritizing animal welfare and sustainable land management.</p>
+    </section>
+    <section id="products">
+        <h2>Our Products</h2>
+        <ul>
+            <li>Macadamia</li>
+            <li>Avocado</li>
+            <li>Eucalyptus</li>
+            <li>Legumes</li>
+        </ul>
+        <form id="order-form">
+            <h3>Order Form</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="product">Product:</label>
+            <select id="product" name="product">
+                <option value="macadamia">Macadamia</option>
+                <option value="avocado">Avocado</option>
+                <option value="eucalyptus">Eucalyptus</option>
+                <option value="legumes">Legumes</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Mutenderi Integrated Farm. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
